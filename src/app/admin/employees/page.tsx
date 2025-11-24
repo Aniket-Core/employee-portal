@@ -34,7 +34,7 @@ export default async function EmployeesPage() {
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            {employees.map((employee) => (
+                            {employees.map((employee: any) => (
                                 <TableRow key={employee.id}>
                                     <TableCell>{employee.name}</TableCell>
                                     <TableCell>{employee.email}</TableCell>
